@@ -1,5 +1,7 @@
 # Desafio de Frontend do Zenklub
 
+![image](https://github.com/olstayna/desafio-zenklub/assets/67444028/ae141b30-5606-4d42-9595-efeff598b36c)
+
 Este é um projeto desenvolvido em React para atender ao desafio proposto pela Zenklub, sendo uma simulação do front-end da aplicação de agendamento de sessões com profissionais de saúde mental.
 
 ## Tecnologias usadas
