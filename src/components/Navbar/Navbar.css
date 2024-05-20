@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--purpleColor);
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+img {
+  width: 10rem; 
+  height: auto; 
+}

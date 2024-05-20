@@ -1,0 +1,166 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.calendar-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 15px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-list {
+  text-align: center;
+}
+
+.slick-slide {
+  width: 50px;
+}
+
+.slick-track {
+  width: max-content !important;
+}
+
+.calendar-header {
+  background-color: var(--purpleColor);
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+}
+
+.calendar-header .title {
+  font-size: 20px;
+}
+
+.calendar-header .subtitle {
+  font-size: 12px;
+}
+
+.days-of-week {
+  display: block;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 2px 4px #0000001a, 0 3px 10px #0000001a;
+  margin-bottom: 0.5rem;
+}
+
+.day {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.available-times {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  box-shadow: 0 2px 4px #0000001a, 0 3px 10px #0000001a;
+  padding: 1.5rem 3rem;
+}
+
+.times {
+  background-color: var(--grayColor);
+  border-radius: 4px;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: #4c4c4c;
+  font-weight: 700;
+}
+
+.selected {
+  background-color: #7655e9;
+  color: #fff;
+}
+
+.arrow {
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 0 5px 3px #ccc;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 768px) {
+  .calendar-container {
+    padding: 0 10px;
+    max-width: 300px;
+  }
+
+  .days-of-week {
+    padding: 1rem !important;
+  }
+
+  .available-times {
+    padding: 1rem !important;
+    width: -webkit-fill-available;
+    gap: 3px;
+  }
+
+  .arrow {
+    box-shadow: none !important;
+    background-color: inherit !important;
+    color: black !important;
+  }
+
+  .arrow-left {
+    left: 3px !important;
+  }
+
+  .arrow-right {
+    right: 3px !important;
+  }
+}
+
+.day-label {
+  color: #4c4c4c;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.date {
+  color: #4c4c4c;
+  font-size: 14px;
+  text-transform: uppercase;
+}
